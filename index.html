@@ -11,6 +11,31 @@
     <header class="logo">
         <img class="logo-img" src="clickheist blogs (1).png" alt="">
     </header>
+    
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Chat plugin code -->
+      <div class="fb-customerchat"
+        attribution="biz_inbox"
+        page_id="101651932072338">
+      </div>
 
     <section class="heading">
         <h1 class="head-cont">എന്തുകൊണ്ടാണ് Coca-Cola ക്കു റൊണാൾഡോ കാരണം എത്രയും വലിയ നഷ്ടം വന്നത്?</h1>
